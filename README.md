@@ -1,7 +1,19 @@
 # movies_app
 
-A new Flutter project.
+An IMDb like industry standard app made in flutter with bloc. 
 
+## How To Install?
+
+- Steup Flutter
+- git-clone or Download the code and extract it.
+- Get your API-key from [TMDB- Getting Started](https://developers.themoviedb.org/3/getting-started/introduction)
+- Paste your API-key in \lib\data\core\api_constants.dart 
+- Run the app
+
+## Screenshots
+![Homepage Popular Tab](../master/sreenshots/homescreen_popular_tab.png)
+![Homepage Soon Tab](../master/sreenshots/homescreen_soon_tab.png)
+![Navihation Drawer](../master/sreenshots/navigation_drawer.png)
 ## Getting Started
 
 This project is a starting point for a Flutter application.
