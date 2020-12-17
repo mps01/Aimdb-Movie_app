@@ -15,12 +15,21 @@ The data is fetched from TMDb API
 
 - Homecreen Popular Tab:
 <p align="center">
-  <img src="https://github.com/mps01/MovieApp_flutter/blob/master/sreenshots/homescreen_popular_tab.png?raw=true" alt="Homescreen Populat Tab image"/>
+  <img src="https://github.com/mps01/MovieApp_flutter/blob/master/sreenshots/homescreen_popular_tab.png?raw=true" alt="Homescreen Popular Tab image"/>
 </p>
 
-![Homepage Soon Tab](../master/sreenshots/homescreen_soon_tab.png)
 
-![Navigation Drawer](../master/sreenshots/navigation_drawer.png)
+-Homepage Soon Tab:
+<p align="center">
+  <img src="https://github.com/mps01/MovieApp_flutter/blob/master/sreenshots/homescreen_soon_tab.png?raw=true" alt="Homescreen Soon Tab image"/>
+</p>
+
+
+-Navigation Drawer
+<p align="center">
+  <img src="https://github.com/mps01/MovieApp_flutter/blob/master/sreenshots/navigation_drawer.png?raw=true" alt="Homescreen Soon Tab image"/>
+</p>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
