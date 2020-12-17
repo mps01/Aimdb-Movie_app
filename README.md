@@ -1,4 +1,4 @@
-# movies_app
+# AimDb-movies_app
 
 An IMDb like industry standard app made in flutter with Bloc.
 The data is fetched from TMDb API
