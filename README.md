@@ -12,8 +12,10 @@ An IMDb like industry standard app made in flutter with bloc.
 
 ## Screenshots
 ![Homepage Popular Tab](../master/sreenshots/homescreen_popular_tab.png)
+
 ![Homepage Soon Tab](../master/sreenshots/homescreen_soon_tab.png)
-![Navihation Drawer](../master/sreenshots/navigation_drawer.png)
+
+![Navigation Drawer](../master/sreenshots/navigation_drawer.png)
 ## Getting Started
 
 This project is a starting point for a Flutter application.
