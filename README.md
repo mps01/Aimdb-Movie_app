@@ -1,6 +1,7 @@
 # movies_app
 
-An IMDb like industry standard app made in flutter with bloc. 
+An IMDb like industry standard app made in flutter with Bloc.
+The data is fetched from TMDb API
 
 ## How To Install?
 
@@ -11,7 +12,11 @@ An IMDb like industry standard app made in flutter with bloc.
 - Run the app
 
 ## Screenshots
-![Homepage Popular Tab](../master/sreenshots/homescreen_popular_tab.png)
+
+- Homecreen Popular Tab:
+<p align="center">
+  <img src="https://github.com/mps01/MovieApp_flutter/blob/master/sreenshots/homescreen_popular_tab.png?raw=true" alt="Homescreen Populat Tab image"/>
+</p>
 
 ![Homepage Soon Tab](../master/sreenshots/homescreen_soon_tab.png)
 
