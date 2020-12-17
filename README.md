@@ -19,13 +19,13 @@ The data is fetched from TMDb API
 </p>
 
 
--Homepage Soon Tab:
+- Homepage Soon Tab:
 <p align="center">
   <img src="https://github.com/mps01/MovieApp_flutter/blob/master/sreenshots/homescreen_soon_tab.png?raw=true" alt="Homescreen Soon Tab image"/>
 </p>
 
 
--Navigation Drawer
+- Navigation Drawer
 <p align="center">
   <img src="https://github.com/mps01/MovieApp_flutter/blob/master/sreenshots/navigation_drawer.png?raw=true" alt="Homescreen Soon Tab image"/>
 </p>
