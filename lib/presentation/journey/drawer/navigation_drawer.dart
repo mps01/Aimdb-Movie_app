@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movies_app/common/constants/size_constants.dart';
 import 'package:movies_app/presentation/widgets/logo.dart';
 import 'package:movies_app/common/extensions/size_extension.dart';
+import 'package:wiredash/wiredash.dart';
 
 import 'navigation_expanded_list_item.dart';
 import 'navigation_list_item.dart';
@@ -40,19 +41,21 @@ class NavigationDrawer extends StatelessWidget {
               title: 'Favorite Movies',
               onPressed: () {},
             ),
-            NavigationExpandedListItem(
-              title: 'Language',
-              children: ['English', 'Spanish'],
-              onPressed: () {},
-            ),
             NavigationListItem(
               title: 'Feedback',
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pop();
+                Wiredash.of(context).show();
+              },
             ),
             NavigationListItem(
               title: 'About',
               onPressed: () {},
             ),
+            NavigationListItem(
+              title: 'Request a Movie',
+              onPressed: () {},
+            )
           ],
         ),
       ),
