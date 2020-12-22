@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movies_app/common/constants/size_constants.dart';
+import 'package:movies_app/presentation/widgets/app_dialog.dart';
 import 'package:movies_app/presentation/widgets/logo.dart';
 import 'package:movies_app/common/extensions/size_extension.dart';
 import 'package:wiredash/wiredash.dart';
@@ -50,7 +51,11 @@ class NavigationDrawer extends StatelessWidget {
             ),
             NavigationListItem(
               title: 'About',
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pop();
+
+                _showDialog(context);
+              },
             ),
             NavigationListItem(
               title: 'Request a Movie',
@@ -61,4 +66,22 @@ class NavigationDrawer extends StatelessWidget {
       ),
     );
   }
+}
+
+void _showDialog(BuildContext context) {
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return Container(
+          child: AppDialog(
+        title: 'About',
+        description: 'This app is made with love in Flutter by',
+        buttonText: 'okay',
+        image: Image.asset(
+          'assets/pngs/appscave.png',
+          height: Sizes.dimen_32.h,
+        ),
+      ));
+    },
+  );
 }
