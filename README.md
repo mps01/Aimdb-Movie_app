@@ -19,16 +19,23 @@ The data is fetched from TMDb API
 </p>
 
 
-- Homepage Soon Tab:
-<p align="center">
-  <img src="https://github.com/mps01/MovieApp_flutter/blob/master/sreenshots/homescreen_soon_tab.png?raw=true" alt="Homescreen Soon Tab image"/>
-</p>
-
-
 - Navigation Drawer
 <p align="center">
   <img src="https://github.com/mps01/MovieApp_flutter/blob/master/sreenshots/navigation_drawer.png?raw=true" alt="Homescreen Soon Tab image"/>
 </p>
+
+
+- Feedback:
+<p align="center">
+  <img src="https://github.com/mps01/MovieApp_flutter/blob/master/sreenshots/feedbackform.png?raw=true" alt="Feedback Form image"/>
+</p>
+
+
+- About Dialog:
+<p align="center">
+  <img src="https://github.com/mps01/MovieApp_flutter/blob/master/sreenshots/about_dialog.png?raw=true" alt="About Dialog image"/>
+</p>
+
 
 ## Getting Started
 
