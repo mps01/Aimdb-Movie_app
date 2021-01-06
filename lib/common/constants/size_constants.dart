@@ -9,6 +9,8 @@ class Sizes {
 
   static var dimen_300;
 
+  static var dimen_35;
+
   Sizes._();
 
   static const double dimen_0 = 0;

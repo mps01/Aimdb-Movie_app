@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:movies_app/common/constants/languages.dart';
 import 'package:movies_app/common/constants/size_constants.dart';
+import 'package:movies_app/common/constants/translation_constants.dart';
+import 'package:movies_app/common/extensions/size_extension.dart';
+import 'package:movies_app/common/extensions/string_extension.dart';
+import 'package:movies_app/presentation/blocs/language/language_bloc.dart';
+import 'package:movies_app/presentation/journey/drawer/navigation_expanded_list_item.dart';
+import 'package:movies_app/presentation/journey/drawer/navigation_list_item.dart';
 import 'package:movies_app/presentation/widgets/app_dialog.dart';
 import 'package:movies_app/presentation/widgets/logo.dart';
-import 'package:movies_app/common/extensions/size_extension.dart';
 import 'package:wiredash/wiredash.dart';
-
-import 'navigation_expanded_list_item.dart';
-import 'navigation_list_item.dart';
 
 class NavigationDrawer extends StatelessWidget {
   const NavigationDrawer();
@@ -22,7 +26,7 @@ class NavigationDrawer extends StatelessWidget {
           ),
         ],
       ),
-      width: Sizes.dimen_200.w,
+      width: Sizes.dimen_300.w,
       child: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -39,49 +43,52 @@ class NavigationDrawer extends StatelessWidget {
               ),
             ),
             NavigationListItem(
-              title: 'Favorite Movies',
+              title: TranslationConstants.favoriteMovies.t(context),
               onPressed: () {},
             ),
+            NavigationExpandedListItem(
+              title: TranslationConstants.language.t(context),
+              children: Languages.languages.map((e) => e.value).toList(),
+              onPressed: (index) {
+                BlocProvider.of<LanguageBloc>(context).add(
+                  ToggleLanguageEvent(
+                    Languages.languages[index],
+                  ),
+                );
+              },
+            ),
             NavigationListItem(
-              title: 'Feedback',
+              title: TranslationConstants.feedback.t(context),
               onPressed: () {
                 Navigator.of(context).pop();
                 Wiredash.of(context).show();
               },
             ),
             NavigationListItem(
-              title: 'About',
+              title: TranslationConstants.about.t(context),
               onPressed: () {
                 Navigator.of(context).pop();
-
                 _showDialog(context);
               },
             ),
-            NavigationListItem(
-              title: 'Request a Movie',
-              onPressed: () {},
-            )
           ],
         ),
       ),
     );
   }
-}
 
-void _showDialog(BuildContext context) {
-  showDialog(
-    context: context,
-    builder: (BuildContext context) {
-      return Container(
-          child: AppDialog(
-        title: 'About',
-        description: 'This app is made with love in Flutter by',
-        buttonText: 'okay',
+  void _showDialog(BuildContext context) {
+    showDialog(
+      context: context,
+      child: AppDialog(
+        title: TranslationConstants.about,
+        description: TranslationConstants.aboutDescription,
+        buttonText: TranslationConstants.okay,
         image: Image.asset(
-          'assets/pngs/appscave.png',
+          'assets/pngs/tmdb_logo.png',
           height: Sizes.dimen_32.h,
         ),
-      ));
-    },
-  );
+      ),
+    );
+  }
 }

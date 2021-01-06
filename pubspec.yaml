@@ -31,10 +31,13 @@ dependencies:
   flutter_svg: ^0.19.2+1
   get_it: ^5.0.1
   google_fonts: ^1.1.1
+
   http: ^0.12.2
   pedantic: ^1.9.2
+  
   wiredash: ^0.4.0
-
+  flutter_localizations:
+    sdk: flutter
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -52,6 +55,7 @@ flutter:
   assets:
     - assets/pngs/
     - assets/svgs/
+    - assets/languages/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
